@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/txtLogEditTitle"
+        android:layout_weight="0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/edit_date"
+            android:id="@+id/textView2"
+            android:singleLine="false"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editDate" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/edit_station"
+            android:id="@+id/textView3"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editStation" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/edit_odometer"
+            android:id="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/editOdometer" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/edit_grade"
+            android:id="@+id/textView5"
+            android:layout_alignTop="@+id/editGrade"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/edit_amount"
+            android:id="@+id/textView6"
+            android:layout_alignTop="@+id/editAmount"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/edit_cost"
+            android:id="@+id/textView7"
+            android:layout_alignTop="@+id/editCost"
+            android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editDate"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editStation" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editStation"
+            android:layout_below="@+id/editDate"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editOdometer" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editOdometer"
+            android:layout_below="@+id/editStation"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textView4" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editGrade"
+            android:layout_below="@+id/editOdometer"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editOdometer" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editAmount"
+            android:layout_below="@+id/editGrade"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editGrade" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/editCost"
+            android:layout_below="@+id/editAmount"
+            android:layout_alignParentEnd="true"
+            android:layout_alignStart="@+id/editAmount" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/errorText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff0000" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/setbutton"
+            android:id="@+id/setButton"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/cancelbutton"
+            android:id="@+id/cancelButton"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

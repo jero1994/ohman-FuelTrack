@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ohman-FuelTrack</string>
+    <string name="logview_title">Log Entries:</string>
+    <string name="addbutton">Add Entry</string>
+    <string name="editbutton">Edit Entry</string>
+    <string name="totalcost">Total Fuel Cost: $</string>
+    <string name="edit_date">Date (yyyy-mm-dd):</string>
+    <string name="edit_station">Station:</string>
+    <string name="edit_odometer">Odometer reading (km):</string>
+    <string name="edit_grade">Fuel grade:</string>
+    <string name="edit_amount">Amount (L):</string>
+    <string name="edit_cost">Unit cost (cents/L):</string>
+    <string name="setbutton">Set</string>
+    <string name="cancelbutton">Cancel</string>
+</resources>
